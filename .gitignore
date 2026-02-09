@@ -1,0 +1,22 @@
+nano .gitignore
+```
+
+Add:
+```
+# Local data - don't publish
+memory/*
+outputs/*
+*.json
+*.csv
+*.xlsx
+*.log
+
+# Keep directory structure
+!memory/.gitkeep
+!outputs/.gitkeep
+!templates/.gitkeep
+
+# System files
+.DS_Store
+*.swp
+*~
