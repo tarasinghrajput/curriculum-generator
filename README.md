@@ -49,20 +49,20 @@ This skill helps generate complete educational curricula by:
 - Node.js (installed with OpenClaw)
 - Python 3 with pandas and openpyxl:
 ```bash
-  pip3 install pandas openpyxl --break-system-packages
+  pip3 install pandas openpyxl
 ```
 
 ## Installation
 
 ### Via ClawHub
 ```bash
-clawhub install <your-username>/curriculum-generator
+clawhub install tarasinghrajput/curriculum-generator
 ```
 
 ### Manual Installation
 ```bash
 cd ~/.openclaw/skills/
-git clone <your-repo-url> curriculum-generator
+git clone https://github.com/tarasinghrajput/curriculum-generator curriculum-generator
 cd curriculum-generator
 ```
 
@@ -165,19 +165,15 @@ clawhub install neobotjan2026/neo-ddg-search
 
 Install Python dependencies:
 ```bash
-pip3 install pandas openpyxl --break-system-packages
+pip3 install pandas openpyxl
 ```
 
-### Skill Not Activating
+### Skill Not Activating?
 
-Reload skills:
-```
-reload skills
-```
 
-Or restart OpenClaw:
+Restart OpenClaw Gateway:
 ```bash
-openclaw restart
+openclaw gateway restart
 ```
 
 ## Contributing
@@ -187,10 +183,6 @@ Contributions are welcome! Please:
 2. Update documentation
 3. Follow the existing code style
 4. Submit clear pull requests
-
-## License
-
-MIT License - feel free to use and modify for your needs.
 
 ## Credits
 
