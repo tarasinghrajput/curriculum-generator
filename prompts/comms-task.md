@@ -4,7 +4,7 @@
 You are creating a Google Sheet for a curriculum based on researcher's data.
 
 ## Input Data
-[Researcher's JSON will be inserted here]
+[Researcher's JSON will be inserted here by Anukar Core]
 
 ## Your Tasks
 
@@ -52,19 +52,10 @@ gog sheets update [SHEET_ID] "A1:J1" --values '[["Curriculum ID","File Name","Ta
 For each resource in the researcher's JSON, add a row:
 
 ```bash
-# Example data row
 gog sheets append [SHEET_ID] "A:J" --values '[[CUR-2026-02-22-001","Curriculum_P0_WebDev_2026-02-22","P0","HTML Fundamentals","video","HTML tags, elements","Anukar","https://youtube.com/...","2026-02-22","2026-02-22"]]'
 ```
 
-### 5. Apply Formatting
-
-```bash
-# Format header row (bold, background color)
-# Adjust column widths
-# Freeze header row
-```
-
-### 6. Share Settings
+### 5. Share Settings
 
 ```bash
 # Make viewable by anyone with link
@@ -74,7 +65,7 @@ gog sheets share [SHEET_ID] --type anyone --role viewer
 gog sheets share [SHEET_ID] --email tarasinghrajput7261@gmail.com --role writer
 ```
 
-### 7. Return Output
+### 6. Return Output
 
 Return this information:
 ```json
@@ -88,14 +79,11 @@ Return this information:
 }
 ```
 
-### 8. Dashboard Logging
+### 7. Dashboard Logging
 
 ```bash
 cd /home/aptest/.openclaw/workspace/Anukar-Dashboard/backend
 node agentCli.js start comms "Curriculum Sheet" "Creating sheet for [Topic]"
-# ... during work ...
-node agentCli.js progress comms "[TASK_ID]" "Added X rows to sheet"
-# ... when done ...
 node agentCli.js complete comms "[TASK_ID]" "Curriculum Sheet" "Created sheet with X resources" "sheets/[sheetId]" "sheet"
 ```
 

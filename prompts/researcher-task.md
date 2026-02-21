@@ -83,8 +83,5 @@ Save to: /home/aptest/.openclaw/workspace/curricula/[curriculumId].json
 ```bash
 cd /home/aptest/.openclaw/workspace/Anukar-Dashboard/backend
 node agentCli.js start researcher "Curriculum Research" "[Focus Area] for [POD Type]"
-# ... during work ...
-node agentCli.js progress researcher "[TASK_ID]" "Found X resources in Y clusters"
-# ... when done ...
 node agentCli.js complete researcher "[TASK_ID]" "Curriculum Research" "Found X resources across Y clusters" "curricula/[curriculumId].json" "research"
 ```
